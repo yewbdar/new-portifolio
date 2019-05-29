@@ -12,12 +12,13 @@ export default function Body(){
                     <hr className="horazontal-line"/>
 
                         <img className="my-image" src={require('../images/profile.jpg')}/>
+                    <p className='typewriter'>
+                        <ReactRotatingText items={['HTML5', 'CSS3', 'JavaScript','jQuery','React js','Redux','Node.js']} />
+                    </p>
 
                         <div className="hey">
 
-                            <p className='typewriter'>
-                                <ReactRotatingText items={['HTML5', 'CSS3', 'JavaScript','React js','Redux','Node.js','jQuery']} />
-                            </p>
+
                             <p>
 
                                Hey, I am Yewbdar Girma. I live in Austin Texas.

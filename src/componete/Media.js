@@ -17,8 +17,8 @@ export default function MyMedia() {
                                 className="img" src={require( "../images/github.png")}/></a>
                         </li>
                         <li>
-                            <a className="media-link" href="https://stackoverflow.com/" target="_blank"><img
-                                className="img" src={require( "../images/stackoverflow.png")}/> </a>
+                            <a className="media-link" href="https://www.codewars.com/users/Yewbdar" target="_blank"><img
+                                className="img" src={require( "../images/codewars.png")}/> </a>
                         </li>
 
                     </ul>

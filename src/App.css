@@ -343,9 +343,9 @@ background-color: #FEE1CD;
 
 
     }
-    .hey{
-        text-align: justify;
-    }
+    /*.hey{*/
+        /*text-align: justify;*/
+    /*}*/
     .media-link img{
         width:65px;
         height:65px;
@@ -396,6 +396,16 @@ background-color: #FEE1CD;
     a.menu-lin:link{
         font-size: 15px;
 
+    }
+    .my-image{
+
+        margin-bottom: 3%;
+
+    }
+    .typewriter{
+        margin-left: 5%;
+        align: center;
+        margin-top: 5%;
     }
 }
 
