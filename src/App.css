@@ -33,6 +33,7 @@
     font-size: 28px;
     color: #FCA05F;
     align-self: center;
+    margin-top: 3%;
 }
 .react-rotating-text-cursor {
     animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s infinite;
@@ -115,6 +116,7 @@ li{
 }
 .media-list {
     padding-left: 0;
+    align-content: center;
 }
 .media-link img{
     width:50px;
@@ -156,7 +158,6 @@ footer p {
 .my-image{
     width: 25%;
     border-radius: 50%;
-
      float: left;
      margin-left: 2%;
      margin-right: 2%;
@@ -165,6 +166,7 @@ a.menu-link:link{
     text-decoration: none;
     color:white;
     font-size: 20px;
+    font-weight: bold;
 }
 a.menu-link:visited{
     text-decoration: none;
@@ -180,15 +182,16 @@ a.menu-link:hover{
 a.menu-lin:link{
     text-decoration: none;
     font-size: 20px;
+
 }
 a.menu-lin:visited{
     text-decoration: none;
-    color: #7e7979;
+    /*color: #7e7979;*/
 
 }
 a.menu-lin:hover{
     text-decoration: none;
-    color: #FCA05F;
+    /*color: #FCA05F;*/
     font-weight: bold;
 
 }
@@ -203,7 +206,7 @@ a.menu-link:active{
     padding: 3%;
 }
 .aboutme{
-    padding: 2%;
+    padding:0% 2%;
 }
 
 
@@ -231,6 +234,29 @@ margin-top: 10px;
 input[type=submit]:hover {
 background-color: #FEE1CD;
     color: #FCA05F;
+}
+
+/*NEW MENU*/
+.topnav {
+    overflow: hidden;
+    background-color: white;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #FCA05F;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+
+}
+
+.topnav a:hover {
+    background-color: #FCA05F;
+    color: white;
 }
 
 /*!******** Above 980 PX**********************!*/
@@ -263,7 +289,7 @@ background-color: #FEE1CD;
     .myname{
         width: 25%;
         margin-right: 35%;
-        background-color: red;
+
     }
     .menu {
 
@@ -283,47 +309,73 @@ background-color: #FEE1CD;
 
 }
 
-
 /*!******** Between  768-641 PX**********************!*/
-@media screen and (min-width: 641px) and (max-width: 768px)
-{
+@media screen and (min-width: 641px) and (max-width: 768px) {
 
-    .myname{
+    .myname {
         width: 32%;
         margin-right: 18%;
-        background-color: blue;
+
     }
+
     .menu {
 
-        width: 45%;
+        width: 47%;
         float: left;
-        border: 1px solid black;
+
     }
+
     .aboutCared {
         width: 78%;
     }
+
     .mediaCared {
         width: 78%;
-        height:10%;
-        float:left;
-        margin: 1% 8%;
+        height: 10%;
+        float: left;
+        margin: 0% 8% 3%;
     }
+
+    .my-image {
+        width: 45%;
+        margin-left: 3%;
+        margin-right: 3%;
+
+
+    }
+    .hey{
+        text-align: justify;
+    }
+    .media-link img{
+        width:65px;
+        height:65px;
+        /*border-radius: 0px;*/
+        margin-right:11px;
+        align-content: center;
+    }
+    .media-list{
+        margin-left: 15%;
+    }
+
 }
 /*!******** Below  640 PX**********************!*/
 @media only screen and (max-width: 640px)
 {
+    .my-image {
+        width: 100%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
     .myname{
         width: 100%;
         /*margin-right: 18%;*/
-        background-color: green;
+
+        margin-right: 0%;
     }
     .menu {
-
         width: 100%;
-        float: left;
-        border: 1px solid black;
-        align-content: center;
-        margin-left: 2%;
+        margin-right: 0%;
+        align-content:start;
     }
     .aboutCared {
         width: 78%;
@@ -332,10 +384,18 @@ background-color: #FEE1CD;
         width: 78%;
         height:10%;
         float:left;
-        margin: 6% 8%;
+        margin: 6% 8% 1%;
     }
     a.menu-link{
-        margin-left: 9%;
+        margin-left: 0%;
+    }
+    .menu-list li{
+        margin-left: 0%;
+        display: inline-block;
+    }
+    a.menu-lin:link{
+        font-size: 15px;
+
     }
 }
 

@@ -42,14 +42,16 @@
         src:require("../images/let'seat.png"),
 
         title:"Let's Eat",
-        detail:"",
+        detail:"An application for people who don't want to eat alone and would like to make friends with people with similar tastebuds around their area",
         code:"https://github.com/thaiscmky/letseat",
         demo:"https://thaiscmky.github.io/letseat/"
-    },{
-          src:require("../images/GifTastic.png"),
-          title:" Gif Tastic",
-          detail:"",
-          code:"https://github.com/yewbdar/GifTastic.git",
-          demo:"https://yewbdar.github.io/GifTastic/"
-      }]
+    },
+      // {
+      //     src:require("../images/GifTastic.png"),
+      //     title:" Gif Tastic",
+      //     detail:"",
+      //     code:"https://github.com/yewbdar/GifTastic.git",
+      //     demo:"https://yewbdar.github.io/GifTastic/"
+      // }
+   ]
 export default data;

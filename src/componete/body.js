@@ -37,7 +37,7 @@ export default function Body(){
 
                             </p>
                             <p>Experienced in building applications using ,
-                                <b>Front-end :</b> HTML5, CSS3, JavaScript, jQuery,
+                                <b>Front-end :</b> HTML5, CSS3,JavaScript, jQuery,
                                 AJAX, React js. ,Bootstrap, Handlebars.js,
                                 JSON <b>Version-Control:</b> Github. <b>Backend:</b>
                                 Node.js, Express js, NPM.

@@ -8,39 +8,37 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import Body from './body'
 import Media from './Media'
-// const styles = {
-//     about: {
-//         width: '55%',
-//         height:'20%',
-//         float:'left',
-//         // marginTop:'10%',
-//         margin:'6% 8% ',
-//         backgroundColor:'#FDD3B4'
-//     },
-//     media:{
-//         width: '20%',
-//         height:'10%',
-//         float:'left',
-//         margin:'6% 0',
-//         backgroundColor:'#FDD3B4'
-//     },
-//     bullet: {
-//         display: 'inline-block',
-//         margin: '0 2px',
-//         transform: 'scale(0.8)',
-//     },
-//     title: {
-//         fontSize: 14,
-//     },
-//     pos: {
-//         marginBottom: 12,
-//     },
-// };
 
-function SimpleCard(props) {
-    // const { classes } = props;
-    // const bull = <span className={classes.bullet}>•</span>;
+import * as emailjs from 'emailjs-com'
 
+class  SimpleCard extends React.Component{
+
+    state={
+        name:"yo",
+        email:'',
+        message:"this is me how are you "
+    }
+
+    onclickHandler =(event)=>{
+        //   event.preventDefault()
+        // var templateParams={
+        //       from_name:this.state.name,
+        //       message_html:this.state.message
+        // }
+        // emailjs.send('your_portfolio', 'portfolio', templateParams ,'user_uhskouIZPToRBQDqsbAYy')
+        //     .then(function(response) {
+        //         console.log('SUCCESS!', response.status, response.text);
+        //     }, function(error) {
+        //         console.log('FAILED...', error);
+        //     });
+        // window.open('mailto:yewbdar.grima@gmail.com?subject=whats up&body=How are you yo whats new ');
+        // console.log('this is the contact ')
+}
+inputHandler =(event)=>{
+    event.preventDefault()
+        this.setState({[event.target.name]:event.target.value})
+}
+render(){
     return (<div >
             <Card className='aboutCared'>
                 <CardContent>
@@ -51,7 +49,7 @@ function SimpleCard(props) {
 
                             <div className="input-holder">
                                 <label htmlFor="name">Name</label> <br/>
-                                <input type="text" name="name" placeholder="your name" required/>
+                                <input type="text" name="name" placeholder="your name" required />
                             </div>
                             <div className="input-holder">
                                 <label htmlFor="name">Email</label><br/>
@@ -61,8 +59,8 @@ function SimpleCard(props) {
                                 <label htmlFor="name">Message</label> <br/>
                                 <textarea name="message" cols="97" rows="11" required></textarea>
                             </div>
-                            <input className="submit" type="submit"/>
-
+                            {/*<button className="submit"  onClick={this.onclickHandler}>submit</button>*/}
+                            <input type="submit" />
                         </form>
 
                     </section>
@@ -75,7 +73,7 @@ function SimpleCard(props) {
             </Card>
         </div>
 
-    );
+    )};
 }
 
 // SimpleCard.propTypes = {
